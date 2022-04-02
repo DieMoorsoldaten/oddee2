@@ -1,32 +1,34 @@
 <?php get_header(); ?>
 
 <div class="fix-wrapper">
-    <div class="container main-head">
-        <?php
-            $my_posts = get_posts( array(
-                'numberposts' => -1,
-                'category'    => 7,
-                'orderby'     => 'date',
-                'order'       => 'ASC',
-                'include'     => array(),
-                'exclude'     => array(),
-                'meta_key'    => '',
-                'meta_value'  =>'',
-                'post_type'   => 'post',
-                'suppress_filters' => true,
-            ) );
+    <div class="container-fluid">
+        <div class="container main-head">
+            <?php
+                $my_posts = get_posts( array(
+                    'numberposts' => -1,
+                    'category'    => 7,
+                    'orderby'     => 'date',
+                    'order'       => 'ASC',
+                    'include'     => array(),
+                    'exclude'     => array(),
+                    'meta_key'    => '',
+                    'meta_value'  =>'',
+                    'post_type'   => 'post',
+                    'suppress_filters' => true,
+                ) );
 
-            foreach( $my_posts as $post ){
-                setup_postdata( $post ); ?>
-                <div class="main-head-block">
-                <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
-                    <?php the_content(); ?>
-                </div>
-                <?php
-            }
+                foreach( $my_posts as $post ){
+                    setup_postdata( $post ); ?>
+                    <div class="main-head-block">
+                    <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                        <?php the_content(); ?>
+                    </div>
+                    <?php
+                }
 
-            wp_reset_postdata();
-        ?>
+                wp_reset_postdata();
+            ?>
+        </div>
     </div>
     <div class="container main-cases">
         <?php

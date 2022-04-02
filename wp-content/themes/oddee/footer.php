@@ -1,5 +1,5 @@
     <footer>
-        <div class="footer px-0">
+        <div class="footer container-fluid">
             <div class="container">
                 <?php //echo do_shortcode( '[footer]'); ?>
                 <?php echo do_shortcode( '[footer]'); ?>

@@ -7,16 +7,16 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header class="header container-fluid px-0">
+    <header class="header container-fluid">
         <nav class="container navbar py-3">
-            <div class="navbar-brand logo pl-3">
+            <div class="navbar-brand logo">
                 <?php the_custom_logo(); ?>
             </div>
             <button class="navbar-toggler header__burger mr-3" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="header__menu text-left fix-menu" id="navbarSupportedContent">
-                <div class="header__menu-container container-xl d-block">
+                <div class="header__menu-container container-md d-block">
                     <?php 
                         wp_nav_menu( array(
                             'menu'  => 'top_menu',
@@ -28,13 +28,13 @@
                     ?>
                 </div>
                 <div class="header__menu-c">    
-                    <div class="header-menu-btm container-xl d-block">
+                    <div class="header-menu-btm container-md d-block">
                         <?php echo do_shortcode( '[footer]'); ?>
                     </div>
                 </div>
             </div>
             <div class="header__menu-second text-left fix-menu">
-                <div class="container-xl position-relative">
+                <div class="container-md second-inner position-relative">
                     <a href="#" class="header__menu-second-btn" id="menuBtn"></a>
                     <?php 
                         wp_nav_menu( array(
@@ -47,8 +47,8 @@
                     ?>
                     
                 </div>
-                <div class="header-menu-btm">
-                    <div class="container-xl d-block">
+                <div class="header__menu-c">    
+                    <div class="header-menu-btm container-md d-block">
                         <?php echo do_shortcode( '[footer]'); ?>
                     </div>
                 </div>
