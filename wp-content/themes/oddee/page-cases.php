@@ -61,13 +61,32 @@
                             foreach( $my_posts as $post ){
                                 setup_postdata( $post ); ?>
                                     
-                                    <div class="main-cases-block mb-3 pb-2">
+                                    <div class="main-cases-block">
 
-                                        <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <figure class="mb-2">
-                                                <?php the_post_thumbnail(); ?>
-                                            </figure>
+                                            <div class="cases-img-wrapper mb-2">
+                                                <figure>
+                                                    <?php the_post_thumbnail(); ?>
+                                                </figure>
+                                                <div class="cases-hover">
+                                                    <h3>
+                                                        <?php the_title(); ?>
+                                                    </h3>
+                                                    <p class="cases-hover-descr2">
+                                                        <?php if(!empty(the_field('main_descr2'))){
+                                                                the_field('main_descr');
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                    <p class="cases-hover-descr">
+                                                        <?php if(!empty(the_field('main_descr'))){
+                                                                the_field('main_descr'); 
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                             <h4 class= mb-1>
                                                 <?php the_title(); ?>
                                             </h4>
@@ -103,13 +122,32 @@
                             foreach( $my_posts as $post ){
                                 setup_postdata( $post ); ?>
                                     
-                                    <div class="main-cases-block mb-3 pb-2">
+                                    <div class="main-cases-block">
 
-                                        <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <figure class="mb-2">
-                                                <?php the_post_thumbnail(); ?>
-                                            </figure>
+                                            <div class="cases-img-wrapper mb-2">
+                                                <figure>
+                                                    <?php the_post_thumbnail(); ?>
+                                                </figure>
+                                                <div class="cases-hover">
+                                                    <h3>
+                                                        <?php the_title(); ?>
+                                                    </h3>
+                                                    <p class="cases-hover-descr2">
+                                                        <?php if(!empty(the_field('main_descr2'))){
+                                                                the_field('main_descr');
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                    <p class="cases-hover-descr">
+                                                        <?php if(!empty(the_field('main_descr'))){
+                                                                the_field('main_descr'); 
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                             <h4 class= mb-1>
                                                 <?php the_title(); ?>
                                             </h4>
@@ -145,13 +183,32 @@
                             foreach( $my_posts as $post ){
                                 setup_postdata( $post ); ?>
                                     
-                                    <div class="main-cases-block mb-3 pb-2">
+                                    <div class="main-cases-block">
 
-                                        <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <figure class="mb-2">
-                                                <?php the_post_thumbnail(); ?>
-                                            </figure>
+                                            <div class="cases-img-wrapper mb-2">
+                                                <figure>
+                                                    <?php the_post_thumbnail(); ?>
+                                                </figure>
+                                                <div class="cases-hover">
+                                                    <h3>
+                                                        <?php the_title(); ?>
+                                                    </h3>
+                                                    <p class="cases-hover-descr2">
+                                                        <?php if(!empty(the_field('main_descr2'))){
+                                                                the_field('main_descr');
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                    <p class="cases-hover-descr">
+                                                        <?php if(!empty(the_field('main_descr'))){
+                                                                the_field('main_descr'); 
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                             <h4 class= mb-1>
                                                 <?php the_title(); ?>
                                             </h4>
@@ -187,13 +244,32 @@
                             foreach( $my_posts as $post ){
                                 setup_postdata( $post ); ?>
                                     
-                                    <div class="main-cases-block mb-3 pb-2">
+                                    <div class="main-cases-block">
 
-                                        <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <figure class="mb-2">
-                                                <?php the_post_thumbnail(); ?>
-                                            </figure>
+                                            <div class="cases-img-wrapper mb-2">
+                                                <figure>
+                                                    <?php the_post_thumbnail(); ?>
+                                                </figure>
+                                                <div class="cases-hover">
+                                                    <h3>
+                                                        <?php the_title(); ?>
+                                                    </h3>
+                                                    <p class="cases-hover-descr2">
+                                                        <?php if(!empty(the_field('main_descr2'))){
+                                                                the_field('main_descr');
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                    <p class="cases-hover-descr">
+                                                        <?php if(!empty(the_field('main_descr'))){
+                                                                the_field('main_descr'); 
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                             <h4 class= mb-1>
                                                 <?php the_title(); ?>
                                             </h4>
@@ -229,13 +305,32 @@
                             foreach( $my_posts as $post ){
                                 setup_postdata( $post ); ?>
                                     
-                                    <div class="main-cases-block mb-3 pb-2">
+                                    <div class="main-cases-block">
 
-                                        <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <figure class="mb-2">
-                                                <?php the_post_thumbnail(); ?>
-                                            </figure>
+                                            <div class="cases-img-wrapper mb-2">
+                                                <figure>
+                                                    <?php the_post_thumbnail(); ?>
+                                                </figure>
+                                                <div class="cases-hover">
+                                                    <h3>
+                                                        <?php the_title(); ?>
+                                                    </h3>
+                                                    <p class="cases-hover-descr2">
+                                                        <?php if(!empty(the_field('main_descr2'))){
+                                                                the_field('main_descr');
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                    <p class="cases-hover-descr">
+                                                        <?php if(!empty(the_field('main_descr'))){
+                                                                the_field('main_descr'); 
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                             <h4 class= mb-1>
                                                 <?php the_title(); ?>
                                             </h4>
@@ -271,13 +366,32 @@
                             foreach( $my_posts as $post ){
                                 setup_postdata( $post ); ?>
                                     
-                                    <div class="main-cases-block mb-3 pb-2">
+                                    <div class="main-cases-block">
 
-                                        <?php // edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
+                                        <?php edit_post_link(null, '<span class="dashicons dashicons-edit-large">', '</span>'); ?>
                                         <a href="<?php the_permalink(); ?>">
-                                            <figure class="mb-2">
-                                                <?php the_post_thumbnail(); ?>
-                                            </figure>
+                                            <div class="cases-img-wrapper mb-2">
+                                                <figure>
+                                                    <?php the_post_thumbnail(); ?>
+                                                </figure>
+                                                <div class="cases-hover">
+                                                    <h3>
+                                                        <?php the_title(); ?>
+                                                    </h3>
+                                                    <p class="cases-hover-descr2">
+                                                        <?php if(!empty(the_field('main_descr2'))){
+                                                                the_field('main_descr');
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                    <p class="cases-hover-descr">
+                                                        <?php if(!empty(the_field('main_descr'))){
+                                                                the_field('main_descr'); 
+                                                            }
+                                                        ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                             <h4 class= mb-1>
                                                 <?php the_title(); ?>
                                             </h4>

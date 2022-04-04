@@ -34,6 +34,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'G400';
+    src: url('./fonts/GrtskGiga-Regular.woff2') format('woff2'),
+        url('./fonts/GrtskGiga-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 html {
     font-size: calc(16 * 100vw / 576);
@@ -1022,14 +1031,26 @@ body {
     object-position: center;
 }
 
+.cases-img-wrapper{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
 .main-cases-block figure {
     width: calc(510 * 100vw / 576);
     height: calc(510 * 100vw / 576);
+    margin: 0;
 }
 
 .main-cases-block a {
     text-decoration: none;
     color: #000;
+}
+
+.cases-hover{
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -1183,7 +1204,7 @@ body {
     }
 
     .main-cases-block a:hover {
-        color: #2361F5;
+        color: #000;
     }
 
     .main-cases-block:hover {
@@ -1194,6 +1215,50 @@ body {
         width: 540px;
         height: 540px;
     }
+
+    .cases-hover{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        display: block;
+        background: #47EA44;
+        height: 100%;
+        transition: all .3s ease;
+        padding: 32px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: #fff;
+    }
+
+    .main-cases-block:hover .cases-hover{
+        top: 0;
+    }
+
+    .cases-hover h3{
+        font-family: 'G700';
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+    }
+
+    .cases-hover-descr{
+        font-family: 'T400';
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin-top: auto;
+    }
+
+    .main-cases-block .cases-hover .cases-hover-descr2{
+        text-transform: none;
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 0;
+    }
+
 }
 
 /* main-services */
